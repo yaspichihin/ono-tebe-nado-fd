@@ -10,13 +10,11 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
-      <!-- Навигации по сайту -->
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit">
-            <a class="header__link_active" href="#">главная</a>
+          <li class="header__links-list-item header__links-list-item_active">
+            <a class="header__link" href="#">главная</a>
           </li>
           <li class="header__links-list-item">
             <a class="header__link" href="#">посмотреть лоты</a>
@@ -27,26 +25,35 @@
         </ul>
       </nav>
 
-      <!-- Логотип -->
-      <a class="header__logo" href="#">
-        <img class="header__logo-image" src="./images/logo-white.svg" alt="Логотип" />
+      <a class="header__logo">
+        <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип" />
       </a>
 
-      <!-- Контакты -->
-      <address class="address header__address">
-        <a class="header__link" href="tel:+99995555555">+9 999 555 5555</a><br />
-        <a class="header__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+      <address class="header__address">
+        <a class="header__address_link" href="tel:+99995555555">+9 999 555 5555</a>
+        <br />
+        <a class="header__address_link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <br />
         наб. Принсенграхт 263- 265, Амстердам
       </address>
     </header>
 
     <main>
       <section class="cover">
-        <h1></h1>
-        <div class="description">
-          <p></p>
-          <button></button>
+
+        <div class="overlay"></div>
+
+        <h1 class="cover__title">
+          <span class="accent-text aligned-start">ОНО</span>
+          <span class="accent-text aligned-center">ТЕБЕ</span>
+          <span class="accent-text aligned-end">НАДО</span>
+        </h1>
+
+        <div class="cover__description">
+          <h2 class="cover__description-text">Аукцион вещей,<span class="cover__description-subtext"> в которые никто не верил</span></h2>
+          <button class="bet-button">Сделать ставку</button>
         </div>
+
       </section>
 
       <section class="lots">
