@@ -1,11 +1,10 @@
 .header {
-  height: 293px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   grid-template-areas: ". min-content .";
   align-items: center;
+  height: 293px;
   padding: 0 50px;
-  background-color: #ffffff;
 }
 
 .header__menu {
@@ -30,9 +29,9 @@
 
 .header__link {
   font-size: 18px;
+  font-style: normal;
   line-height: 21.13px;
   text-wrap: nowrap;
-  font-style: normal;
 }
 
 .header__links-list-item_active .header__link {
@@ -44,16 +43,16 @@
 }
 
 .header__logo-image {
-  height: 105px;
   width: 148px;
+  height: 105px;
 }
 
 .header__address {
-  max-width: 240px;
   justify-self: end;
+  max-width: 240px;
   font-size: 18px;
-  line-height: 24.3px;
   font-style: normal;
+  line-height: 24.3px;
 }
 
 .header__address_link {
@@ -61,13 +60,11 @@
 }
 
 .cover {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-
   width: 1100px;
   height: 757px;
-
   background-image: url("../images/cover.jpg");
   background-position: center center;
   background-size: cover;
@@ -83,19 +80,19 @@
 
 .cover__title {
   z-index: 1;
-  margin-top: 165px;
-  margin-left: 50px;
-  margin-right: 50px;
   height: 385px;
+  margin-top: 165px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .accent-text {
   display: block;
+  color: #ffffff;
   font-weight: 700;
   font-size: 100px;
   line-height: 115px;
   letter-spacing: 30px;
-  color: #ffffff;
 }
 
 .aligned-start {
@@ -109,63 +106,60 @@
 }
 
 .aligned-end {
-  padding-top: 20px;
   margin-right: -30px;
+  padding-top: 20px;
   text-align: end;
 }
 
 .cover__description {
   z-index: 1;
-  margin-top: 106px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 106px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
 }
 
 .cover__description-text {
   z-index: 1;
-  font-size: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 28px;
-  word-spacing: 20px;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 20px;
 }
 
 .cover__description-subtext {
   z-index: 1;
-  font-size: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 28px;
-  word-spacing: 18px;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 18px;
 }
 
 .bet-button {
   z-index: 1;
   width: 256px;
   height: 51px;
-  background-color: transparent;
   border: 1px #ffffff solid;
-
-  font-size: 22px;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 25.83px;
   color: #ffffff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25.83px;
   text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 
 .lots {
   height: 723px;
   margin-top: 180px;
-
   padding: 0 24px;
-  background-color: #ffffff;
 }
 
 .lots__heading {
@@ -177,10 +171,10 @@
 }
 
 .lots__card-list {
-  margin-top: 27px;
   display: flex;
   justify-content: space-between;
   gap: 25px;
+  margin-top: 27px;
 }
 
 .lots__card-list-item {
@@ -188,37 +182,36 @@
 }
 
 .card {
-
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 596px;
   width: 334px;
+  height: 596px;
 }
 
 .card__title {
   z-index: 1;
+  width: 254px;
   margin-top: 48px;
   margin-left: 40px;
-  width: 254px;
+  color: #ffffff;
   font-weight: 700;
   font-size: 22px;
   line-height: 26.4px;
   text-decoration: underline;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .card__text {
   z-index: 1;
-  margin-left: 40px;
-  margin-bottom: 48px;
   width: 254px;
+  margin-bottom: 48px;
+  margin-left: 40px;
+  color: #ffffff;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
 }
 
 .card_type_film {
@@ -240,23 +233,123 @@
 }
 
 .lots__look-more-link {
+  display: block;
   width: 192px;
   height: 23px;
-  display: block;
-
-  font-size: 20px;
-  line-height: 23.48px;
-
   margin-top: 30px;
   margin-left: 40px;
-
+  font-size: 20px;
+  line-height: 23.48px;
 }
 
 .about {
-  height: 595px;
-  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 334px 693px;
+  grid-template-rows: 595px;
+  gap: 25px;
+  margin-top: 120px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin-top: 35px;
+  margin-left: 47px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  display: block;
+  margin-top: 136px;
+  font-weight: 700px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: block;
+  width: 693px;
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about_description > :nth-child(2) {
+  margin-top: 100px;
 }
 
 .footer {
-  height: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px;
+  margin-top: 180px;
+}
+
+.footer__address {
+  max-width: 264.57px;
+  height: 98px;
+  margin-left: 51px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+}
+
+.footer__address_link {
+  text-wrap: nowrap;
+}
+
+.footer__menu {
+  display: block;
+  width: 163.9px;
+  margin-left: 102px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__menu-list-item {
+  list-style: none;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21.13px;
+  text-wrap: nowrap;
+}
+
+.footer__menu-list-item_active .footer__menu-link {
+  text-decoration-line: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 48px;
+  width: 240px;
+  height: 48px;
+  margin-left: 77px;
+}
+
+.footer__social-list-item {
+  width: 48px;
+  height: 48px;
+  list-style: none;
 }
